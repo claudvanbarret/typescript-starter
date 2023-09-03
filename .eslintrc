@@ -2,7 +2,8 @@
     "root": true,
     "parser": "@typescript-eslint/parser",
     "plugins": [
-      "@typescript-eslint"
+      "@typescript-eslint", 
+      "prettier"
     ],
     "parserOptions": {
       "parser": "@typescript-eslint/parser",
@@ -14,9 +15,11 @@
       "airbnb-typescript/base",
       "eslint:recommended",
       "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
     ],
     "rules": { 
-      "no-console": "error"
+      "no-console": "error",
+      "prettier/prettier": "error"
     }
   }
