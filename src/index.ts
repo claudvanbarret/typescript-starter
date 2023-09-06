@@ -1,5 +1,7 @@
 import express, { Router, Request, Response } from 'express';
 
+import './utils/DotEnvUtils';
+
 const app = express();
 
 const route = Router();
@@ -12,4 +14,4 @@ route.get('/', (req: Request, res: Response) => {
 
 app.use(route);
 
-app.listen(3001, () => 'Server running on port 3001');
+app.listen(process.env.PORT ?? 3001, () => 'Server running on port 3001');
