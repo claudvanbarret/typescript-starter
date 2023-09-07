@@ -1,6 +1,8 @@
 import express, { Router, Request, Response } from 'express';
 
-import './utils/dotenv.util';
+import './utils/paths';
+
+import '@utils/dotenv';
 
 const app = express();
 
